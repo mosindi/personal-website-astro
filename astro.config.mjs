@@ -5,8 +5,10 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: 'https://sindi.xyz',
   integrations: [mdx(), sitemap(), tailwind()],
   middleware: true, // bu satırı ekle
+  output: "static",
+  base: "/personal-website-astro/", // Örn: "/personal-website/"
 });
 
