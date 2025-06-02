@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sindi.xyz',
+  site: 'https://mosindi.github.io/personal-website-astro/',
   integrations: [mdx(), sitemap(), tailwind()],
   middleware: true, // bu satırı ekle
   output: "static",
