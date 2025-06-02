@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
   site: 'https://mosindi.github.io/personal-website-astro/',
-  base: isProd ? "/personal-website-astro/" : "/", // ✅ sadece prod için base ver
-  integrations: [mdx(), sitemap(), tailwind()],
+  base: isProd ? "/personal-website-astro/" : "/", // ✅ kritik nokta
   output: "static",
+  integrations: [mdx(), sitemap(), tailwind()],
 });
