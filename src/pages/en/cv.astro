@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TimeLineElement from "../../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv" lang="en">
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Profile</div>
+  </div>
+
+  <div class="mb-5 text-justify">
+    I’m a Senior Software Architect with over 10 years of experience across embedded systems, multiplayer game backends, fintech, and edtech platforms. I have a strong background in software architecture, microservices, cloud-native systems, and interactive applications built with .NET and Unity3D. I’ve led product and R&D teams, designed large-scale distributed systems, and contributed to innovation in both corporate and startup environments.
+  </div>
+
+  <div class="mb-10 text-justify">
+    Passionate about leveraging technology for social good—especially in gaming and education. As a volunteer at AKUT Search and Rescue, I actively contribute to community-driven tech efforts while mentoring and sharing knowledge with peers.
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Boğaziçi University – Computer Education & Educational Tech" subtitle="2010 - 2016, Istanbul, Turkey" />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement title="Senior Software Architect – Vuvy Game (ex Mynet Games)" subtitle="Jan 2021 – Present, Istanbul">
+      Architected multiplayer game backends (RedSky, Berry Match, Madness Match), developed distributed microservices, and led engineering teams.
+    </TimeLineElement>
+
+    <TimeLineElement title="R&D Software Engineer – Architecht" subtitle="Jul 2019 – Jan 2021, Istanbul">
+      Developed frontend and backend modules for Ethix-NG, an ethical banking platform. Worked on Redis, Azure and DevOps pipelines.
+    </TimeLineElement>
+
+    <TimeLineElement title="Team Lead – Idea E-Learning Solutions" subtitle="Sep 2016 – Jul 2019, Istanbul">
+      Led development of LMS, exam systems, and game-based learning modules using Unity3D and .NET.
+    </TimeLineElement>
+
+    <TimeLineElement title="Co-Founder – Atelye Teknoloji" subtitle="Jan 2015 – Dec 2018, Istanbul">
+      Built xAPI-based assessment tools and gamified learning platforms. Contributed to startup projects as a technical founder.
+    </TimeLineElement>
+
+    <TimeLineElement title="Software Consultant – Fuskey HR" subtitle="Aug 2014 – Feb 2015, Istanbul">
+      Provided software consulting to HR teams. Developed digital tools for recruitment and performance tracking.
+    </TimeLineElement>
+
+    <TimeLineElement title="Game Developer – Odyssey / ETB R&D" subtitle="Mar 2013 – Aug 2014, Istanbul">
+      Developed serious games using Unity3D in TÜBİTAK-funded R&D projects. Integrated hardware like Kinect, Leap Motion, and EEG for interactive learning.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-10">
+    <li>.NET / C#</li>
+    <li>Microservices</li>
+    <li>MongoDB</li>
+    <li>Redis</li>
+    <li>RabbitMQ</li>
+    <li>SignalR</li>
+    <li>Unity3D</li>
+    <li>AWS & Azure</li>
+    <li>Kubernetes</li>
+    <li>Docker</li>
+    <li>ABP.IO</li>
+    <li>Scrum</li>
+  </ul>
+</BaseLayout>

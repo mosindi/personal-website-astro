@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TimeLineElement from "../../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Özgeçmiş" sideBarActiveItemID="cv" lang="tr">
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Profil</div>
+  </div>
+
+  <div class="mb-5 text-justify">
+    10 yılı aşkın deneyime sahip Kıdemli Yazılım Mimarıyım. Gömülü sistemlerden oyun altyapılarına, fintech çözümlerinden eğitim teknolojilerine kadar birçok sektörde çalıştım. Teknik liderlik, takım yönetimi ve sistem tasarımı konularında derin deneyime sahibim. Unity3D ve .NET ile geliştirilmiş etkileşimli uygulamalar, büyük ölçekli mikroservis mimarileri ve bulut tabanlı dağıtık sistemlerde uzmanlaştım. Hem Ar-Ge hem de ürün geliştirme süreçlerinde aktif rol aldım.
+  </div>
+
+  <div class="mb-10 text-justify">
+    Oyun ve eğitim teknolojileri başta olmak üzere, teknolojiyi toplumsal faydaya dönüştürmeyi önemsiyorum. AKUT'taki gönüllü çalışmalarımla topluluk desteğine katkı sunarken, teknik bilgi birikimimi aktif olarak paylaşmaktayım.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Eğitim</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Boğaziçi Üniversitesi, Bilgisayar ve Öğretim Teknolojileri" subtitle="2010 - 2016, İstanbul, Türkiye" />
+    <TimeLineElement title="İstanbul Üniversitesi, Yönetim Bilişim Sistemleri (ikinci üniversite)" subtitle="Devam ediyor, İstanbul, Türkiye" />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Deneyim</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement title="Yazılım Mimarı – Vuvy Game (Eski Mynet Games)" subtitle="Ocak 2021 – Günümüz, İstanbul">
+      RedSky, Berry Match ve Madness Match gibi çok oyunculu oyunların altyapılarını tasarlayıp geliştirdim. Dağıtık oyun servisleri için yeni framework'ler oluşturdum, takımı yönettim ve mentorluk yaptım.
+    </TimeLineElement>
+
+    <TimeLineElement title="Ar-Ge Yazılım Geliştirici – Architecht" subtitle="Temmuz 2019 – Ocak 2021, İstanbul">
+      Ethix-NG projesinde frontend ve backend modülleri geliştirdim. DevOps süreçlerine katkı sundum, Redis, React ve Azure üzerinde çalışmalar gerçekleştirdim.
+    </TimeLineElement>
+
+    <TimeLineElement title="Takım Lideri – Idea E-Learning" subtitle="Eylül 2016 – Temmuz 2019, İstanbul">
+      Eğitim teknolojileri üzerine LMS, sınav sistemleri ve oyun tabanlı öğrenme çözümleri geliştirdim. Unity3D, .NET ve Xamarin teknolojileri ile mobil ve web uygulamaları yazdım.
+    </TimeLineElement>
+
+    <TimeLineElement title="Kurucu Ortak – Atelye Teknoloji" subtitle="Ocak 2015 – Aralık 2018, İstanbul">
+      TinCan/xAPI tabanlı ölçme değerlendirme sistemleri ve oyunlaştırılmış öğrenme araçları geliştirdim. Girişim projelerinde aktif rol aldım.
+    </TimeLineElement>
+
+    <TimeLineElement title="Yazılım Danışmanı – Fuskey İnsan Kaynakları" subtitle="Ağustos 2014 – Şubat 2015, İstanbul">
+      Yazılım ekiplerine danışmanlık verdim. İnsan kaynakları süreçlerine özel dijital çözümler üzerine çalıştım.
+    </TimeLineElement>
+
+    <TimeLineElement title="Oyun Geliştirici – Odyssey / ETB Ar-Ge" subtitle="Mart 2013 – Ağustos 2014, İstanbul">
+      TÜBİTAK destekli projelerde Unity3D ile ciddi oyunlar geliştirdim. Kinect, Leap Motion ve EEG cihazlarıyla entegre deneysel eğitim ortamları tasarladım.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl font-bold">Yetenekler</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-10">
+    <li>.NET / C#</li>
+    <li>Microservices</li>
+    <li>MongoDB</li>
+    <li>Redis</li>
+    <li>RabbitMQ</li>
+    <li>SignalR</li>
+    <li>Unity3D</li>
+    <li>AWS & Azure</li>
+    <li>Kubernetes</li>
+    <li>Docker</li>
+    <li>ABP.IO</li>
+    <li>Scrum</li>
+  </ul>
+</BaseLayout>

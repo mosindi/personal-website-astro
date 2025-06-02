@@ -1,0 +1,9 @@
+---
+import { loadIcon } from "../lib/loadIcon.ts";
+
+const { name, className = "" } = Astro.props;
+
+const svgContent = await loadIcon(name, className);
+---
+
+<Fragment set:html={svgContent} />

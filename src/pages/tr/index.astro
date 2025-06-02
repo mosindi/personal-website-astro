@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home" lang="tr">
+  <div class="pb-12 mt-5">
+	<div class="text-xl py-1">Merhaba 👋</div>
+    <div class="text-5xl font-bold">Ben Mustafa Ozan Şindi</div>
+    <div class="text-3xl py-3 font-bold">Software Architect & Backend Developer</div>
+	<div class="py-2">
+ 		<p class="text-lg">
+    		Yüksek trafikli mikroservis mimarileri, oyun altyapıları ve dağıtık sistemler geliştiriyorum. Şu anda <b>Vuvy Games</b>'de GameBox platformunun mimarisini tasarlıyor ve geliştiriyorum.
+ 		</p>
+	</div>
+	<div class="mt-8">
+		<a class="btn" href="https://linkedin.com/in/mozansindi" target="_blank">LinkedIn</a>
+		<a href="https://github.com/mosindi" target="_blank" class="btn btn-outline ml-5">GitHub</a>
+	</div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Projeler {"</>"}</div>
+  </div>
+    <HorizontalCard
+      title="GameBox – Vuvy Game"
+    icon="gamepad-2"
+      desc="Çok oyunculu mobil oyunlar için ölçeklenebilir bir backend platformu."
+      url="#"
+      badge={["Live", "Gaming"]}
+    />
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
